@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casas Goianita — Reunião Estratégica & Governança 02/10/2026 | Live Consultoria</title>
+  <meta name="description" content="Apresentação Executiva Interativa da Reunião de 02/10/2026 — Avaliação Financeira, Destravamento do TARE, E-commerce, Projeto Novo de Novo e Estratégias Comerciais. Live Consultoria." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    :root {
+      --live-deep: #06192a;
+      --live-navy: #0a2238;
+      --live-glass: rgba(10, 34, 56, 0.82);
+      --live-glass-card: rgba(13, 42, 69, 0.75);
+      --live-glass-hover: rgba(18, 56, 92, 0.90);
+      --live-accent: #00e800;
+      --live-accent-dim: rgba(0, 232, 0, 0.12);
+      --live-accent-glow: rgba(0, 232, 0, 0.35);
+      --live-white: #ffffff;
+      --live-silver: #c8d6e0;
+      --live-platinum: #e2ebf2;
+      --live-muted: rgba(200, 214, 224, 0.72);
+      --live-danger: #ff4757;
+      --live-danger-bg: rgba(255, 71, 87, 0.14);
+      --live-warning: #ffa502;
+      --live-warning-bg: rgba(255, 165, 2, 0.14);
+      --live-info: #1e90ff;
+      --live-info-bg: rgba(30, 144, 255, 0.14);
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-card: rgba(200, 214, 224, 0.15);
+      --border-active: rgba(0, 232, 0, 0.45);
+      --glass-blur: blur(20px) saturate(170%);
+      --radius-xl: 20px;
+      --radius-lg: 14px;
+      --radius-md: 10px;
+      --radius-sm: 6px;
+      --transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--live-deep);
+      color: var(--live-white);
+      font-size: 19px;
+      line-height: 1.78;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+      padding-bottom: 5rem;
+    }
+
+    /* Textura de fundo SVG sutil e elegante */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(0, 232, 0, 0.04) 0%, transparent 45%),
+        radial-gradient(circle at 85% 85%, rgba(30, 144, 255, 0.05) 0%, transparent 50%),
+        url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.015' fill-rule='evenodd'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Barra de Progresso no Topo */
+    #progress-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: rgba(255, 255, 255, 0.05);
+      z-index: 9999;
+    }
+
+    #progress-bar {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #00e800, #00ffaa);
+      box-shadow: 0 0 10px rgba(0, 232, 0, 0.7);
+      transition: width 0.1s linear;
+    }
+
+    /* Header Fixo Executivo */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(6, 25, 42, 0.92);
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 0.75rem 2rem;
+    }
+
+    .header-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .brand-wrap {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .brand-logo-text {
+      font-size: 1.25rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--live-white);
+      text-decoration: none;
+    }
+
+    .brand-logo-text span {
+      color: var(--live-accent);
+    }
+
+    .client-tag {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--live-accent);
+      background: var(--live-accent-dim);
+      border: 1px solid var(--border-active);
+      padding: 0.25rem 0.8rem;
+      border-radius: 50px;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .date-badge {
+      font-size: 0.85rem;
+      color: var(--live-muted);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(255, 255, 255, 0.04);
+      padding: 0.35rem 0.85rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .btn-nav {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--live-white);
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid var(--border-subtle);
+      padding: 0.4rem 0.9rem;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: var(--transition);
+    }
+
+    .btn-nav:hover {
+      background: var(--live-accent-dim);
+      border-color: var(--live-accent);
+      color: var(--live-accent);
+    }
+
+    /* Container Principal */
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 2.5rem 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Hero Executivo */
+    .hero {
+      background: var(--live-glass-card);
+      backdrop-filter: var(--glass-blur);
+      border: 1px solid var(--border-card);
+      border-radius: var(--radius-xl);
+      padding: 3.5rem 3rem;
+      margin-bottom: 3rem;
+      position: relative;
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.85rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.35rem 0.9rem;
+      border-radius: 50px;
+    }
+
+    .status-pill.success {
+      background: var(--live-accent-dim);
+      border: 1px solid var(--live-accent);
+      color: var(--live-accent);
+    }
+
+    .status-pill.danger {
+      background: var(--live-danger-bg);
+      border: 1px solid var(--live-danger);
+      color: var(--live-danger);
+    }
+
+    .hero-title {
+      font-size: 2.45rem;
+      font-weight: 800;
+      line-height: 1.25;
+      letter-spacing: -0.03em;
+      color: var(--live-white);
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-title span {
+      background: linear-gradient(120deg, #ffffff, var(--live-accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-desc {
+      font-size: 1.15rem;
+      color: var(--live-silver);
+      max-width: 980px;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+
+    /* Key Indicators Cards Grid */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+
+    .kpi-card {
+      background: rgba(6, 25, 42, 0.7);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.4rem 1.5rem;
+      transition: var(--transition);
+    }
+
+    .kpi-card:hover {
+      border-color: var(--live-accent);
+      transform: translateY(-3px);
+    }
+
+    .kpi-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.6rem;
+    }
+
+    .kpi-title {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--live-muted);
+      font-weight: 600;
+    }
+
+    .kpi-icon {
+      color: var(--live-accent);
+    }
+
+    .kpi-value {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--live-white);
+      line-height: 1.1;
+      margin-bottom: 0.35rem;
+    }
+
+    .kpi-subtitle {
+      font-size: 0.88rem;
+      color: var(--live-silver);
+    }
+
+    /* Navigation Anchor Bar */
+    .quick-nav {
+      position: sticky;
+      top: 65px;
+      z-index: 900;
+      background: rgba(6, 25, 42, 0.88);
+      backdrop-filter: var(--glass-blur);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 0.6rem 1rem;
+      margin-bottom: 3rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .quick-nav a {
+      color: var(--live-silver);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      padding: 0.4rem 0.85rem;
+      border-radius: var(--radius-sm);
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .quick-nav a:hover, .quick-nav a.active {
+      background: var(--live-accent-dim);
+      color: var(--live-accent);
+    }
+
+    /* Seções Gerais */
+    section {
+      margin-bottom: 4rem;
+      scroll-margin-top: 140px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.75rem;
+      border-bottom: 1px solid var(--border-card);
+      padding-bottom: 0.85rem;
+    }
+
+    .section-title {
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--live-white);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .section-title i {
+      color: var(--live-accent);
+    }
+
+    .section-badge {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--live-muted);
+      background: rgba(255, 255, 255, 0.05);
+      padding: 0.25rem 0.75rem;
+      border-radius: 50px;
+    }
+
+    /* Cards e Blocos */
+    .card {
+      background: var(--live-glass-card);
+      backdrop-filter: var(--glass-blur);
+      border: 1px solid var(--border-card);
+      border-radius: var(--radius-xl);
+      padding: 2.25rem;
+      margin-bottom: 1.75rem;
+      transition: var(--transition);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .card:hover {
+      border-color: rgba(0, 232, 0, 0.3);
+    }
+
+    .card-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--live-white);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+
+    .card-title span.tag {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 0.2rem 0.65rem;
+      border-radius: 4px;
+      margin-left: auto;
+    }
+
+    p {
+      color: var(--live-silver);
+      margin-bottom: 1.25rem;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    strong {
+      color: var(--live-white);
+      font-weight: 600;
+    }
+
+    /* Box de Alerta Executivo */
+    .alert-box {
+      border-radius: var(--radius-lg);
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      gap: 1.25rem;
+      align-items: flex-start;
+      border: 1px solid transparent;
+    }
+
+    .alert-box.danger {
+      background: var(--live-danger-bg);
+      border-color: rgba(255, 71, 87, 0.4);
+      color: #ffb8b8;
+    }
+
+    .alert-box.warning {
+      background: var(--live-warning-bg);
+      border-color: rgba(255, 165, 2, 0.4);
+      color: #ffeaa7;
+    }
+
+    .alert-box.success {
+      background: var(--live-accent-dim);
+      border-color: var(--live-accent);
+      color: #d1f7d1;
+    }
+
+    .alert-box.info {
+      background: var(--live-info-bg);
+      border-color: rgba(30, 144, 255, 0.4);
+      color: #c7e5ff;
+    }
+
+    .alert-box i {
+      flex-shrink: 0;
+      margin-top: 0.2rem;
+    }
+
+    .alert-content h4 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--live-white);
+      margin-bottom: 0.35rem;
+    }
+
+    .alert-content p {
+      color: inherit;
+      font-size: 0.98rem;
+      margin-bottom: 0;
+    }
+
+    /* Grid de Participantes */
+    .stakeholder-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .stakeholder-card {
+      background: rgba(6, 25, 42, 0.6);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.35rem;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .avatar-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--live-accent-dim);
+      border: 1px solid var(--border-active);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--live-accent);
+      flex-shrink: 0;
+    }
+
+    .stakeholder-info h4 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--live-white);
+      margin-bottom: 0.2rem;
+    }
+
+    .stakeholder-info p {
+      font-size: 0.85rem;
+      color: var(--live-muted);
+      margin-bottom: 0;
+    }
+
+    .stakeholder-info .role-tag {
+      font-size: 0.75rem;
+      color: var(--live-accent);
+      font-weight: 600;
+    }
+
+    /* Tabelas Executivas */
+    .table-responsive {
+      width: 100%;
+      overflow-x: auto;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-card);
+      background: rgba(6, 25, 42, 0.6);
+      margin-top: 1rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.95rem;
+    }
+
+    th {
+      background: rgba(10, 36, 61, 0.9);
+      color: var(--live-white);
+      padding: 1.1rem 1.25rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      border-bottom: 1px solid var(--border-card);
+      white-space: nowrap;
+    }
+
+    td {
+      padding: 1.1rem 1.25rem;
+      border-bottom: 1px solid var(--border-subtle);
+      color: var(--live-silver);
+      vertical-align: middle;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .badge-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 50px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .badge-status.delay {
+      background: var(--live-danger-bg);
+      color: var(--live-danger);
+      border: 1px solid var(--live-danger);
+    }
+
+    .badge-status.urgent {
+      background: var(--live-warning-bg);
+      color: var(--live-warning);
+      border: 1px solid var(--live-warning);
+    }
+
+    .badge-status.pending {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--live-silver);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .badge-status.running {
+      background: var(--live-info-bg);
+      color: var(--live-info);
+      border: 1px solid var(--live-info);
+    }
+
+    .badge-status.done {
+      background: var(--live-accent-dim);
+      color: var(--live-accent);
+      border: 1px solid var(--live-accent);
+    }
+
+    /* Blocos de Destaque 2 Colunas */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+      gap: 1.75rem;
+    }
+
+    /* Listas com Ícones */
+    .feature-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      margin-top: 1rem;
+    }
+
+    .feature-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      color: var(--live-silver);
+    }
+
+    .feature-list li i {
+      color: var(--live-accent);
+      flex-shrink: 0;
+      margin-top: 0.3rem;
+    }
+
+    /* Footer Executivo */
+    footer {
+      max-width: 1240px;
+      margin: 4rem auto 0;
+      padding: 2.5rem 2rem;
+      border-top: 1px solid var(--border-subtle);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      color: var(--live-muted);
+      font-size: 0.9rem;
+    }
+
+    .footer-left strong {
+      color: var(--live-white);
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      body {
+        font-size: 17.5px;
+        padding-bottom: 3rem;
+      }
+
+      .container {
+        padding: 1.5rem 1rem;
+      }
+
+      .hero {
+        padding: 2rem 1.5rem;
+      }
+
+      .hero-title {
+        font-size: 1.85rem;
+      }
+
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra de Progresso no Topo -->
+  <div id="progress-container">
+    <div id="progress-bar"></div>
+  </div>
+
+  <!-- Header Executivo Fixo -->
+  <header>
+    <div class="header-inner">
+      <div class="brand-wrap">
+        <a href="#inicio" class="brand-logo-text">Live <span>Consultoria</span></a>
+        <span class="client-tag">Casas Goianita</span>
+      </div>
+      <div class="header-actions">
+        <div class="date-badge">
+          <i data-lucide="calendar" size="14"></i>
+          <span>02/10/2026 — Reunião Estratégica</span>
+        </div>
+        <a href="#plano-acao" class="btn-nav">
+          <i data-lucide="check-square" size="14"></i>
+          <span>Plano de Ação</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container" id="inicio">
+
+    <!-- Hero Executivo -->
+    <div class="hero">
+      <div class="hero-meta">
+        <span class="status-pill success"><i data-lucide="shield-check" size="14"></i> Ata Registrada</span>
+        <span class="status-pill danger"><i data-lucide="zap" size="14"></i> E-commerce sem vendas há 2 semanas</span>
+        <span class="date-badge"><i data-lucide="map-pin" size="14"></i> Loja Física — Goiânia / GO</span>
+      </div>
+
+      <h1 class="hero-title">
+        Avaliação Financeira, TARE, <span>E-commerce & Estratégias Comerciais</span>
+      </h1>
+
+      <p class="hero-desc">
+        Reunião presencial conduzida por <strong>Luiz Portal</strong> com <strong>Carlos Filho ("Curuca")</strong> e <strong>Cláudia</strong>. O tom foi definido logo no início: <em>"esquece o que a Goianita foi — temos que pensar no futuro"</em>. A pauta tratou da finalização do TARE, da auditoria de impostos pagos indevidamente, da paralisação das vendas online, da expansão do Novo de Novo e de novas formas de trazer cliente e receita para a loja.
+      </p>
+
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-header">
+            <span class="kpi-title">ICMS E-commerce (TARE)</span>
+            <i data-lucide="percent" class="kpi-icon" size="20"></i>
+          </div>
+          <div class="kpi-value">19% → 4,2%</div>
+          <div class="kpi-subtitle">Faturado pelo CNPJ da filial</div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-header">
+            <span class="kpi-title">Meta projetada — Ano 1</span>
+            <i data-lucide="trending-up" class="kpi-icon" size="20"></i>
+          </div>
+          <div class="kpi-value">R$ 1,2 mi</div>
+          <div class="kpi-subtitle">≈ R$ 100 mil/mês (ano 2: R$ 1,8 mi · ano 3: R$ 2,5 mi)</div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-header">
+            <span class="kpi-title">Vendas online</span>
+            <i data-lucide="alert-octagon" class="kpi-icon" size="20" style="color: var(--live-danger);"></i>
+          </div>
+          <div class="kpi-value" style="color: var(--live-danger);">Zero</div>
+          <div class="kpi-subtitle">Site e lista sem conseguir vender há ~2 semanas</div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-header">
+            <span class="kpi-title">Impostos pagos indevidamente</span>
+            <i data-lucide="badge-dollar-sign" class="kpi-icon" size="20"></i>
+          </div>
+          <div class="kpi-value">~R$ 40 mil</div>
+          <div class="kpi-subtitle">R$ 35 mil + R$ 5 mil identificados — base para auditoria</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="quick-nav">
+      <a href="#sumario"><i data-lucide="file-text" size="14"></i> Sumário</a>
+      <a href="#participantes"><i data-lucide="users" size="14"></i> Participantes</a>
+      <a href="#tributario-tare"><i data-lucide="landmark" size="14"></i> TARE & Fiscal</a>
+      <a href="#crise-ecommerce"><i data-lucide="shopping-cart" size="14"></i> E-commerce</a>
+      <a href="#novo-de-novo"><i data-lucide="repeat" size="14"></i> Novo de Novo</a>
+      <a href="#comercial-loja"><i data-lucide="sparkles" size="14"></i> Atração de Clientes</a>
+      <a href="#monetizacao"><i data-lucide="building" size="14"></i> Novas Receitas</a>
+      <a href="#plano-acao"><i data-lucide="check-circle" size="14"></i> Plano de Ação</a>
+      <a href="#seguranca"><i data-lucide="shield-alert" size="14"></i> Pontos de Atenção</a>
+    </div>
+
+    <!-- SEÇÃO 0 -->
+    <section id="sumario">
+      <div class="section-header">
+        <h2 class="section-title"><i data-lucide="file-text"></i> Sumário Executivo</h2>
+        <span class="section-badge">Visão C-Level</span>
+      </div>
+
+      <div class="card">
+        <p style="font-size: 1.12rem;">
+          A reunião reforçou o compromisso de olhar para frente: valorizar a Goianita concluindo os projetos que geram valor futuro — <strong>TARE, e-commerce, lista de casamento e Novo de Novo</strong>. Os principais encaminhamentos foram:
+        </p>
+        <ul class="feature-list" style="font-size: 1.04rem;">
+          <li><i data-lucide="check-circle-2"></i><div><strong>TARE:</strong> o único impedimento é a abertura da conta bancária da filial. O corpo do e-mail de protocolo já está com o Matheus (contabilidade).</div></li>
+          <li><i data-lucide="alert-triangle" style="color: var(--live-danger);"></i><div><strong>E-commerce parado:</strong> nem o site nem a lista conseguem concluir vendas há cerca de duas semanas, desde a migração do pagamento (Venture Pay → Cielo). Luiz acionou o Júnior (ShopThemas/Huapps) durante a reunião.</div></li>
+          <li><i data-lucide="check-circle-2"></i><div><strong>Auditoria de impostos e jurídico:</strong> auditoria tributária com o Grupo Studio (remuneração sobre o que for recuperado) e reunião decisória com o Dr. Danilo, sem a participação de Carlos Alvarenga.</div></li>
+          <li><i data-lucide="check-circle-2"></i><div><strong>Novo de Novo:</strong> aprovada a modalidade de compra de lotes fechados (modelo Enjoei), além da consignação, e simplificação do cadastro duplicado.</div></li>
+          <li><i data-lucide="check-circle-2"></i><div><strong>Fluxo e receita na loja:</strong> produtos chamariz (o "pão francês"), painel de LED, parceria de filtros/bebedouros e mostruário em lojas parceiras.</div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 1 -->
+    <section id="participantes">
+      <div class="section-header">
+        <h2 class="section-title"><i data-lucide="users"></i> Participantes</h2>
+        <span class="section-badge">Presentes e acionados</span>
+      </div>
+
+      <div class="card">
+        <div class="stakeholder-grid">
+          <div class="stakeholder-card">
+            <div class="avatar-icon"><i data-lucide="compass"></i></div>
+            <div class="stakeholder-info">
+              <h4>Luiz Portal</h4>
+              <p class="role-tag">Live Consultoria</p>
+              <p>Consultor líder — condução da reunião</p>
+            </div>
+          </div>
+          <div class="stakeholder-card">
+            <div class="avatar-icon"><i data-lucide="briefcase"></i></div>
+            <div class="stakeholder-info">
+              <h4>Carlos Filho ("Curuca")</h4>
+              <p class="role-tag">Casas Goianita</p>
+              <p>Compras, loja e Novo de Novo</p>
+            </div>
+          </div>
+          <div class="stakeholder-card">
+            <div class="avatar-icon"><i data-lucide="wallet"></i></div>
+            <div class="stakeholder-info">
+              <h4>Cláudia</h4>
+              <p class="role-tag">Casas Goianita</p>
+              <p>Gestão — TARE, contabilidade e marketing</p>
+            </div>
+          </div>
+          <div class="stakeholder-card">
+            <div class="avatar-icon"><i data-lucide="calculator"></i></div>
+            <div class="stakeholder-info">
+              <h4>Matheus</h4>
+              <p class="role-tag">Contabilidade — por telefone</p>
+              <p>Alertou sobre as metas e sanções do TARE</p>
+            </div>
+          </div>
+          <div class="stakeholder-card">
+            <div class="avatar-icon"><i data-lucide="cpu"></i></div>
+            <div class="stakeholder-info">
+              <h4>Júnior</h4>
+              <p class="role-tag">ShopThemas / Huapps — por telefone</p>
+              <p>Acionado para a falha nas vendas online</p>
+            </div>
+          </div>
+          <div class="stakeholder-card">
+            <div class="avatar-icon"><i data-lucide="user"></i></div>
+            <div class="stakeholder-info">
+              <h4>Carlos Alvarenga</h4>
+              <p class="role-tag" style="color: var(--live-muted);">Patriarca — não participou</p>
+              <p>Não participará da reunião com o Dr. Danilo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 2 -->
+    <section id="tributario-tare">
+      <div class="section-header">
+        <h2 class="section-title"><i data-lucide="landmark"></i> TARE, Auditoria de Impostos & Jurídico</h2>
+        <span class="section-badge">Frente fiscal</span>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3 class="card-title"><i data-lucide="file-check" style="color: var(--live-accent);"></i> Como funciona o TARE</h3>
+          <p>O TARE existe para que empresas de Goiás consigam competir no e-commerce com empresas de outros estados. O ICMS das vendas online cai de <strong>19% para 4,2%</strong>, desde que tudo seja faturado pelo <strong>CNPJ da filial</strong> — e a filial não pode receber na conta da matriz.</p>
+          <div class="table-responsive">
+            <table>
+              <thead><tr><th>Ano</th><th>Faturamento projetado</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Ano 1</strong></td><td>R$ 1.200.000 (≈ R$ 100 mil/mês)</td></tr>
+                <tr><td><strong>Ano 2</strong></td><td>R$ 1.800.000</td></tr>
+                <tr><td><strong>Ano 3</strong></td><td>R$ 2.500.000</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <ul class="feature-list">
+            <li><i data-lucide="check"></i> <div><strong>Contrapartida:</strong> reinvestir 15% do benefício na própria empresa (consultoria, contratações etc.) — Luiz citou cerca de R$ 65 mil no ano.</div></li>
+            <li><i data-lucide="check"></i> <div><strong>Quadro previsto (10 vagas em 12 meses):</strong> gestor de e-commerce, operacional logístico, 5 assistentes de expedição, 2 analistas de faturamento (considerando a transferência da Erika e de outra colaboradora para a filial) e atendimento/SAC.</div></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title"><i data-lucide="alert-circle" style="color: var(--live-warning);"></i> O que trava e o que foi decidido</h3>
+          <p>O assunto se arrasta há cerca de três meses. A transferência do e-commerce da matriz para a filial já foi feita; <strong>falta apenas a conta bancária da filial</strong>. Pode ser no Sicoob (custo citado de ~R$ 140/mês) ou em banco digital.</p>
+          <div class="alert-box warning">
+            <i data-lucide="alert-triangle" size="24"></i>
+            <div class="alert-content">
+              <h4>Alerta do Matheus</h4>
+              <p>Se a meta de faturamento não for atingida, a empresa pode ter que pagar o ICMS retroativo cheio do período beneficiado. Cláudia afirmou que a meta será atingida — "agora para a frente é crescimento".</p>
+            </div>
+          </div>
+          <ul class="feature-list">
+            <li><i data-lucide="landmark"></i> <div><strong>Auditoria de impostos:</strong> foram identificados ~R$ 35 mil + ~R$ 5 mil pagos indevidamente. Luiz acionou o Diogo (Grupo Studio) para auditar os últimos anos; a empresa auditora fica com um percentual do que for recuperado.</div></li>
+            <li><i data-lucide="scale"></i> <div><strong>Dr. Danilo:</strong> a parte dele está pronta. Reunião rápida e decisória na próxima semana com Curuca, Cláudia e Luiz — Carlos Alvarenga já informou que não vai participar.</div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 3 -->
+    <section id="crise-ecommerce">
+      <div class="section-header">
+        <h2 class="section-title"><i data-lucide="shopping-cart"></i> E-commerce e Lista sem Vendas</h2>
+        <span class="section-badge" style="background: var(--live-danger-bg); color: var(--live-danger); border: 1px solid var(--live-danger);">Prioridade máxima</span>
+      </div>
+
+      <div class="card">
+        <div class="alert-box danger">
+          <i data-lucide="alert-octagon" size="28" style="color: var(--live-danger);"></i>
+          <div class="alert-content">
+            <h4>Cerca de duas semanas sem conseguir vender online</h4>
+            <p>Durante a reunião, Cláudia confirmou com o Eduardo: nem pela lista nem pelo site comum a compra é concluída. Em um teste anterior, foram necessárias cinco tentativas para uma compra passar — "ninguém vai tentar cinco vezes".</p>
+          </div>
+        </div>
+        
+        <div class="alert-box info">
+          <i data-lucide="layout-dashboard" size="28" style="color: var(--live-info);"></i>
+          <div class="alert-content">
+            <h4>Dashboard de Demandas da Implantação</h4>
+            <p>Acompanhe o andamento das tarefas e correções através do <a href="https://ecossistemalive.github.io/casagoianita-golive-status/" target="_blank" style="color: var(--live-info); text-decoration: underline; font-weight: 600;">Painel de Controle (GoLive Status)</a>.</p>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div>
+            <h4 style="color: var(--live-white); margin-bottom: 0.75rem;">Contexto</h4>
+            <p>O e-commerce é do Olist. O meio de pagamento está migrando do Venture Pay para a Cielo, e o problema começou desde essa migração. Luiz levantou a hipótese de falha na nova integração (tokens gerados no CNPJ/conta corretos).</p>
+          </div>
+          <div>
+            <h4 style="color: var(--live-white); margin-bottom: 0.75rem;">Encaminhamento</h4>
+            <ul class="feature-list">
+              <li><i data-lucide="phone-call"></i> Luiz ligou para o Júnior (ShopThemas/Huapps), que acionou o Leonan para investigar.</li>
+              <li><i data-lucide="camera"></i> Eduardo segue testando e enviando prints no grupo.</li>
+              <li><i data-lucide="share-2"></i> Depois de resolvido: integrar TikTok Shop, Google Shopping e Meta.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 4 -->
+    <section id="novo-de-novo">
+      <div class="section-header">
+        <h2 class="section-title"><i data-lucide="repeat"></i> Novo de Novo</h2>
+        <span class="section-badge">Brechó de louças, cristais e utilidades</span>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3 class="card-title"><i data-lucide="coins" style="color: var(--live-accent);"></i> Captação: além da consignação, compra por lote</h3>
+          <p>Há procura diária na loja ("já chegou coisa nova?"), mas muitas pessoas dizem que vão trazer peças e não trazem, ou não querem deixar em consignação. Cláudia relatou como funciona a loja física do <strong>Enjoei</strong>: avaliação do lote inteiro e oferta de um valor fechado.</p>
+          <ul class="feature-list">
+            <li><i data-lucide="check"></i> <div><strong>Decidido:</strong> oferecer as duas opções — deixar consignado ou vender o lote à vista para a Goianita.</div></li>
+            <li><i data-lucide="check"></i> <div><strong>Margem:</strong> Curuca defendeu comprar com margem mínima de 500%; Cláudia pediu cautela. Luiz reforçou que o segredo está na <strong>curadoria/avaliação</strong>, para não encher a loja de peças sem giro.</div></li>
+            <li><i data-lucide="check"></i> <div><strong>Investimento inicial citado:</strong> R$ 20 a 30 mil, no máximo R$ 50 mil.</div></li>
+            <li><i data-lucide="lightbulb"></i> <div><strong>Ideias em avaliação:</strong> troca por crédito em mercadoria (proposta do Curuca), parceria com personal organizers e compras de oportunidade (ex.: jogos de chá Schmidt/Meridional comprados a ~R$ 100).</div></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title"><i data-lucide="database" style="color: var(--live-info);"></i> Cadastro em duplicidade</h3>
+          <p>Hoje cada peça é cadastrada duas vezes (sistema da Goianita e Olist). Luiz explicou que a integração direta com o Olist é difícil — até empresas homologadas estão com problemas.</p>
+          <div class="alert-box info">
+            <i data-lucide="refresh-cw" size="24"></i>
+            <div class="alert-content">
+              <h4>Solução proposta</h4>
+              <p>Num primeiro momento, operação em paralelo. Em seguida: cadastrar no sistema do Novo de Novo (que tem mais campos) e gerar um arquivo diário (ou duas vezes ao dia) para importação no Olist.</p>
+            </div>
+          </div>
+          <p>Luiz também pediu ao Matheus a confirmação da carga tributária final do Novo de Novo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 5 -->
+    <section id="comercial-loja">
+      <div class="section-header">
+        <h2 class="section-title"><i data-lucide="sparkles"></i> Atrair Clientes para a Loja</h2>
+        <span class="section-badge">Fluxo e visibilidade</span>
+      </div>
+
+      <div class="card">
+        <p>Luiz usou o exemplo do supermercado: a pessoa vai comprar o pão e sai com mais cinco itens. A Goianita precisa do seu <strong>"pão francês"</strong> — o produto chamariz (<em>decoy</em>) com preço muito agressivo, idealmente um para cada tipo de cliente.</p>
+        <div class="grid-2" style="margin: 1.5rem 0;">
+          <div style="background: rgba(6, 25, 42, 0.7); border: 1px solid var(--border-subtle); padding: 1.5rem; border-radius: var(--radius-lg);">
+            <h4 style="color: var(--live-white); margin-bottom: 0.5rem;"><i data-lucide="wine" style="color: var(--live-accent);"></i> Cristaleira para jovens</h4>
+            <p style="font-size: 0.97rem;">Versão de 12 peças a cerca de R$ 99 (a de 18 peças hoje sai por R$ 199). Preço psicológico abaixo de R$ 100.</p>
+          </div>
+          <div style="background: rgba(6, 25, 42, 0.7); border: 1px solid var(--border-subtle); padding: 1.5rem; border-radius: var(--radius-lg);">
+            <h4 style="color: var(--live-white); margin-bottom: 0.5rem;"><i data-lucide="utensils" style="color: var(--live-accent);"></i> Faqueiro de 76 peças</h4>
+            <p style="font-size: 0.97rem;">Montado na própria loja (linhas Laguna e Cosmos) — segundo Curuca, ninguém no Brasil tem essa composição. Luiz citou ~R$ 129 e potencial também para o Mercado Livre.</p>
+          </div>
+        </div>
+        <ul class="feature-list">
+          <li><i data-lucide="megaphone"></i> <div><strong>Impulsionamento de produtos:</strong> parou com a viagem da Silvana à Colômbia e precisa ser retomado — focado nos produtos chamariz, não aleatório.</div></li>
+          <li><i data-lucide="video"></i> <div><strong>Redes sociais:</strong> o que importa é <strong>frequência</strong>, mais que volume. Referência: perfil de utilidades de SP com 273 mil seguidores e vídeos de 400 mil visualizações. Influenciadores trazem alcance e aumentam a chance de viralizar.</div></li>
+          <li><i data-lucide="calendar-days"></i> <div><strong>Eventos de oportunidade:</strong> outlets e pontas de coleção (ex.: linha de cerâmica) geram fluxo. Curuca avalia ir a São Paulo comprar diretamente.</div></li>
+          <li><i data-lucide="store"></i> <div><strong>Fachada:</strong> Luiz relatou que a mudança da fachada já está sendo percebida pelo público.</div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 6 -->
+    <section id="monetizacao">
+      <div class="section-header">
+        <h2 class="section-title"><i data-lucide="building"></i> Novas Receitas com o Espaço</h2>
+        <span class="section-badge">Ajudar a pagar aluguel e despesas</span>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3 class="card-title"><i data-lucide="tv" style="color: var(--live-accent);"></i> Painel de LED</h3>
+          <p>Luiz indicou o Wagner (Capital Mídias), seu cliente há mais de 20 anos. Curuca também tem um amigo do ramo de painel de LED. Curuca estimou cerca de R$ 5 mil de receita. Cláudia falará com o Wagner; retorno previsto em duas semanas.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title"><i data-lucide="droplet" style="color: var(--live-info);"></i> Filtros e bebedouros (comodato)</h3>
+          <p>Um parceiro do ramo de água/purificadores colocará produtos na loja; a Goianita vende e recebe comissão, sem estoque próprio. Falta definir como ficam a maquininha e a emissão de nota fiscal.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title"><i data-lucide="layout-grid" style="color: var(--live-accent);"></i> Mostruário em lojas parceiras</h3>
+          <p>Curuca propôs um mostruário Goianita (taças, porta-retratos, itens de enxoval) dentro das lojas de um empresário parceiro. Luiz considerou viável no formato mostruário, sem ocupar estoque do parceiro — venda pelo e-commerce com comissão.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title"><i data-lucide="battery-charging" style="color: var(--live-info);"></i> Eletroposto (ideia futura)</h3>
+          <p>Curuca está pesquisando eletroposto e um parceiro que trará motos elétricas com troca de bateria. Luiz alertou: há eletropostos que dão dinheiro e outros que só dão dor de cabeça — o ponto decide.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 7 -->
+    <section id="plano-acao">
+      <div class="section-header">
+        <h2 class="section-title"><i data-lucide="check-square"></i> Plano de Ação</h2>
+        <span class="section-badge">Reunião de 02/10/2026</span>
+      </div>
+
+      <div class="card">
+        <p>Prazos registrados somente quando foram ditos na reunião. Onde não houve definição, consta <strong>"a definir"</strong>.</p>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr><th>#</th><th>Ação</th><th>Responsável</th><th>Prazo</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+              <tr style="background: rgba(255, 71, 87, 0.05);">
+                <td><strong>01</strong></td><td><strong>Restabelecer as vendas do site e da lista (pagamento Cielo/Olist)</strong></td><td>Júnior / Leonan (ShopThemas/Huapps) · testes: Eduardo</td><td>Imediato</td><td><span class="badge-status urgent">Crítico</span></td>
+              </tr>
+              <tr>
+                <td><strong>02</strong></td><td>Abrir a conta bancária da filial</td><td>Cláudia</td><td>A definir (urgente)</td><td><span class="badge-status pending">A iniciar</span></td>
+              </tr>
+              <tr>
+                <td><strong>03</strong></td><td>Autorizar o Matheus a enviar o e-mail de protocolo do TARE</td><td>Cláudia / Matheus</td><td>Após a conta aberta</td><td><span class="badge-status pending">A iniciar</span></td>
+              </tr>
+              <tr>
+                <td><strong>04</strong></td><td>Esclarecer dúvidas do TARE com o Matheus</td><td>Luiz Portal</td><td>Segunda-feira (05/10), se necessário</td><td><span class="badge-status pending">A iniciar</span></td>
+              </tr>
+              <tr>
+                <td><strong>05</strong></td><td>Marcar reunião com o Diogo (Grupo Studio) — auditoria de impostos</td><td>Luiz Portal</td><td>Segunda-feira (05/10)</td><td><span class="badge-status running">Contato feito</span></td>
+              </tr>
+              <tr>
+                <td><strong>06</strong></td><td>Reunião rápida e decisória com o Dr. Danilo</td><td>Curuca / Cláudia / Luiz Portal</td><td>Semana de 05/10</td><td><span class="badge-status pending">A agendar</span></td>
+              </tr>
+              <tr>
+                <td><strong>07</strong></td><td>Lançar a modalidade de compra de lotes no Novo de Novo e avisar a equipe</td><td>Curuca</td><td>A definir</td><td><span class="badge-status pending">A iniciar</span></td>
+              </tr>
+              <tr>
+                <td><strong>08</strong></td><td>Rotina de arquivo para importar o cadastro do Novo de Novo no Olist</td><td>Luiz Portal / equipe</td><td>A definir</td><td><span class="badge-status pending">A iniciar</span></td>
+              </tr>
+              <tr>
+                <td><strong>09</strong></td><td>Confirmar a carga tributária final do Novo de Novo</td><td>Matheus</td><td>A definir</td><td><span class="badge-status pending">A iniciar</span></td>
+              </tr>
+              <tr>
+                <td><strong>10</strong></td><td>Definir os produtos chamariz (cristaleira ~R$ 99, faqueiro 76 peças) e retomar o impulsionamento</td><td>Curuca / Cláudia</td><td>A definir</td><td><span class="badge-status pending">A iniciar</span></td>
+              </tr>
+              <tr>
+                <td><strong>11</strong></td><td>Painel de LED — contato com Wagner (Capital Mídias) e amigo do Curuca</td><td>Cláudia / Curuca</td><td>~2 semanas</td><td><span class="badge-status pending">A iniciar</span></td>
+              </tr>
+              <tr>
+                <td><strong>12</strong></td><td>Definir operação (maquininha / nota) da parceria de filtros e bebedouros</td><td>Curuca</td><td>A definir</td><td><span class="badge-status pending">A iniciar</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 8 -->
+    <section id="seguranca">
+      <div class="section-header">
+        <h2 class="section-title"><i data-lucide="shield-alert"></i> Pontos de Atenção</h2>
+        <span class="section-badge">Para acompanhamento</span>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h4 style="color: var(--live-white); margin-bottom: 0.75rem;">Meta do TARE x vendas paradas</h4>
+          <p>A meta de ~R$ 100 mil/mês depende de o e-commerce voltar a vender. Com o site parado, o risco de não cumprimento cresce — o faturamento da filial deve ser acompanhado mês a mês.</p>
+        </div>
+        <div class="card">
+          <h4 style="color: var(--live-white); margin-bottom: 0.75rem;">Equipe</h4>
+          <p>Curuca relatou dificuldade séria para contratar ("funcionário tá um caos"). Isso impacta tanto as 10 vagas previstas no TARE quanto a operação do Novo de Novo.</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="footer-left">
+      <p><strong>Live Consultoria</strong> — Governança Corporativa & Reestruturação Estratégica</p>
+      <p>Casas Goianita · Reunião de 02/10/2026</p>
+    </div>
+    <div class="footer-right">
+      <p>Consultor líder: <strong>Luiz Portal</strong></p>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    window.addEventListener('scroll', () => {
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      document.getElementById('progress-bar').style.width = (winScroll / height) * 100 + '%';
+    });
+
+    const navLinks = document.querySelectorAll('.quick-nav a');
+    const sections = document.querySelectorAll('section');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        if (pageYOffset >= section.offsetTop - 160) current = section.getAttribute('id');
+      });
+      navLinks.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
+      });
+    });
+  </script>
+</body>
+</html>
